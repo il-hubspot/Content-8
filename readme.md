@@ -1,13 +1,13 @@
 ![HubSpot](https://cdn2.hubspot.net/hubfs/327485/HubSpot%20Wordmark%20-%20Full%20Color.png "HubSpot")
-## Form 2
+## Call to Action 6
 
-This form lets you adds a basic minimalistic form with button. The form allows you to set background color, font color and action after pressing the button. Including redirecting and displaying a message.  
+This module allows to set up a basic action button, encouraging visitors to click on the button. This module includes link, button, text and background settings.
 
-### Form 2 module demo can be visited here:
+### Call to Action 6 module demo can be visited here:
 
-w.inboundlabs.co/feat6-form2
+w.inboundlabs.co/action6-content5-demo
 
-### Form 2 module is FREE and is part of the Startup Framework FREE and PAID packages:
+### Call to Action 6 module is FREE and is part of the Startup Framework FREE and PAID packages:
 
 https://marketplace.hubspot.com/products/inboundlabs/startup-framework-marketplace
 
