@@ -1,20 +1,28 @@
 {# Please do NOT modify this module/file because your changes may be overwritten by future installation from BRiX Editor. To customize this, please clone this module/file and work from there. #}
 
 {{ require_css("//cdn2.hubspot.net/hubfs/346178/designmodo/ui-kit/ui-kit-content/css/ui-kit-styles.css") }}      
-<!-- content-13 -->
-<section class="content-13 content-13-v2 subscribe-form" style="background-color: {{ module.background_color.color }};">
+<!-- content-11 -->
+<section class="content-11" style="background-color: {{ module.background_color.color }};">
     <div class="container">
-        <div class="row js-form-btn-color" data-form-btn-color="{{ module.form_button_color.color }}" data-form-btn-hover-color="{{ module.form_button_hover_color.color }}">
-          {% if module.form %}
-            {% form
-              form_key="d1144b5a-132a-8c47-fc9a-8e7dfe61db1c"
-              form_to_use="{{ module.form.form_id }}"
-              response_response_type="{{ module.form.response_type }}"
-              response_message="{{ module.form.message }}"
-              response_redirect_id="{{ module.form.redirect_id }}"
-              response_redirect_url="{{module.form.redirect_url}}"
-            %}
+        <span style="color: {{ module.text_color.color }};">{{ module.text }}</span> 
+      	
+      	{% if module.choose_cta_button %}
+      		<div class="btn-cta">{% cta guid="{{ module.cta_button }}" %}</div>
+        {% else %}
+      	  {% set styles = 'background-color: {{ module.button.button_color.color }}; color: #ffffff;' %}
+          {% set link = page_by_id(module.button.link).absolute_url if module.button.link else "#" %}
+
+          {% if module.button.use_custom_link %}
+              {% set link = module.button.custom_link %}
           {% endif %}
-        </div>
+
+          {% if module.button.button_type == 'clear' %}
+              {% set styles = 'background-color: transparent; border: 2px solid {{ module.button.button_color.color }}; color: {{ module.button.button_color.color }};' %}
+          {% endif %}
+
+          {% if link %}
+          <a class="btn btn-large js-btn-color" href="{{ link }}" style="{{ styles }}" data-btn-type="{{ module.button.button_type }}" data-btn-color="{{ module.button.button_color.color }}" data-btn-hover-color="{{ module.button.button_hover_color.color }}">{{ module.button.button_text }}</a>
+          {% endif %}
+        {% endif %}
     </div>
 </section>
