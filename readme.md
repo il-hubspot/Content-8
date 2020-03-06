@@ -1,13 +1,13 @@
 ![HubSpot](https://cdn2.hubspot.net/hubfs/327485/HubSpot%20Wordmark%20-%20Full%20Color.png "HubSpot")
-## Call to Action 6
+## Content 8
 
-This module allows to set up a basic action button, encouraging visitors to click on the button. This module includes link, button, text and background settings.
+This module displays a blog like display with images, date and quote-like text. You can set up the images/photos as well as control the text.
 
-### Call to Action 6 module demo can be visited here:
+### Content 8 module demo can be visited here:
 
-w.inboundlabs.co/action6-content5-demo
+w.inboundlabs.co/content-8-and-10-demo
 
-### Call to Action 6 module is FREE and is part of the Startup Framework FREE and PAID packages:
+### Content 8 module is FREE and is part of the Startup Framework FREE and PAID packages:
 
 https://marketplace.hubspot.com/products/inboundlabs/startup-framework-marketplace
 
