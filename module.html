@@ -1,28 +1,37 @@
 {# Please do NOT modify this module/file because your changes may be overwritten by future installation from BRiX Editor. To customize this, please clone this module/file and work from there. #}
 
 {{ require_css("//cdn2.hubspot.net/hubfs/346178/designmodo/ui-kit/ui-kit-content/css/ui-kit-styles.css") }}      
-<!-- content-11 -->
-<section class="content-11" style="background-color: {{ module.background_color.color }};">
+<!-- content-19 -->
+<section class="content-19">
     <div class="container">
-        <span style="color: {{ module.text_color.color }};">{{ module.text }}</span> 
-      	
-      	{% if module.choose_cta_button %}
-      		<div class="btn-cta">{% cta guid="{{ module.cta_button }}" %}</div>
-        {% else %}
-      	  {% set styles = 'background-color: {{ module.button.button_color.color }}; color: #ffffff;' %}
-          {% set link = page_by_id(module.button.link).absolute_url if module.button.link else "#" %}
-
-          {% if module.button.use_custom_link %}
-              {% set link = module.button.custom_link %}
-          {% endif %}
-
-          {% if module.button.button_type == 'clear' %}
-              {% set styles = 'background-color: transparent; border: 2px solid {{ module.button.button_color.color }}; color: {{ module.button.button_color.color }};' %}
-          {% endif %}
-
-          {% if link %}
-          <a class="btn btn-large js-btn-color" href="{{ link }}" style="{{ styles }}" data-btn-type="{{ module.button.button_type }}" data-btn-color="{{ module.button.button_color.color }}" data-btn-hover-color="{{ module.button.button_hover_color.color }}">{{ module.button.button_text }}</a>
-          {% endif %}
-        {% endif %}
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="quote">
+                    <div class="quote-text" style="color: {{ module.left_quote_color.color }};">{{ module.left_quote }}</div>
+                    <div class="quote-author">
+                        <div class="quote-author-photo" style="background-image: url('{{ module.left_quote_author_image.src }}');"></div>
+                        <div class="quote-author-name" style="color: {{ module.left_quote_author_name_color.color }};">{{ module.left_quote_author_name }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <div class="quote">
+                    <div class="quote-author">
+                        <div class="quote-author-photo" style="background-image: url('{{ module.right_quote_1.right_quote_1_author_image.src }}');"></div>
+                        <div class="quote-author-name" style="color: {{ module.right_quote_1.right_quote_1_author_name_color.color }};">{{ module.right_quote_1.right_quote_1_author_name }}</div>
+                    </div>
+                    <div class="quote-date" style="color: {{ module.right_quote_1.right_quote_1_date_color.color }};">{{ module.right_quote_1.right_quote_1_date }}</div>
+                    <div class="quote-text" style="color: {{ module.right_quote_1.right_quote_1_color.color }};">{{ module.right_quote_1.right_quote_1 }}</div>
+                </div>
+                <div class="quote">
+                    <div class="quote-author">
+                        <div class="quote-author-photo" style="background-image: url('{{ module.right_quote_2.right_quote_2_author_image.src }}');"></div>
+                        <div class="quote-author-name" style="color: {{ module.right_quote_2.right_quote_2_author_name_color.color }};">{{ module.right_quote_2.right_quote_2_author_name }}</div>
+                    </div>
+                    <div class="quote-date" style="color: {{ module.right_quote_2.right_quote_2_date_color.color }};">{{ module.right_quote_2.right_quote_2_date }}</div>
+                    <div class="quote-text" style="color: {{ module.right_quote_2.right_quote_2_color.color }};">{{ module.right_quote_2.right_quote_2 }}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
