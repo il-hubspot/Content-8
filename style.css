@@ -1,10 +1,1 @@
-.btn-cta {
-	display: inline-block;
-  margin-left: 33px;
-}
 
-@media (max-width: 614px) {
-	.btn-cta {
-  	margin: 30px 0 0;
-  }
-}
